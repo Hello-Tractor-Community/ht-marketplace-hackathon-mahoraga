@@ -1,0 +1,352 @@
+*{
+    margin: 0;
+    box-sizing:border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+html{
+    overflow-x: hidden;
+}
+
+.header{
+    height: 80px;
+    width: 100%;
+    background-color: #ff5821;
+    border-radius: 3px;
+    margin: 30px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+	flex-grow: 1;
+}
+
+.header .logo{
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+}
+
+.notification{
+    display: flex;
+    background-color: wheat;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7px 10px;
+    border-radius: 3px;
+    width: 80px;
+}
+
+#content nav{
+    height: 56px;
+    background: white;
+    padding: 0 24px;
+    display: flex;
+    align-items: center;
+    grid-gap: 24px;
+    font-family: 'Times New Roman', Times, serif;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+
+#content nav form{
+    max-width: 400px;
+    width: 100%;
+    margin-right: auto;
+}
+
+#content nav .bx.bxs-bell{
+    color: black;
+}
+
+#content nav form .form-input {
+    display: flex;
+    align-items: center;
+    height: 36px;
+}
+
+#content nav form .form-input input{
+    flex-grow: 1;
+    padding: 0 16px;
+    height: 100%;
+    border: none;
+    background: whitesmoke;
+    border: 36px 0 0 36px;
+    outline: none;
+    width: 100%;
+    color: black;
+}
+
+#content nav form .form-input button {
+	width: 36px;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: whitesmoke;
+	color: black;
+	font-size: 18px;
+	border: none;
+	outline: none;
+	border-radius: 0 36px 36px 0;
+	cursor: pointer;
+}
+
+#content nav .notification {
+	font-size: 20px;
+	position: relative;
+}
+
+#content nav .notification .num {
+	position: absolute;
+	top: -6px;
+	right: -6px;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	border: 2px none black;
+	background: #ff5821;
+	color: black;
+	font-weight: 700;
+	font-size: 12px;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#content main {
+	width: 100%;
+	padding: 36px 24px;
+	font-family: 'Times New Roman', Times, serif;
+	overflow-y: auto;
+}
+
+#content main .head-title {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	grid-gap: 16px;
+	flex-wrap: wrap;
+}
+
+#content main .head-title .left h1 {
+	font-size: 36px;
+	font-weight: 600;
+	margin-bottom: 10px;
+	color: black;
+}
+
+#content main .head-title .left .breadcrumb {
+	display: flex;
+	align-items: center;
+	grid-gap: 16px;
+}
+
+#content main .head-title .left .breadcrumb li {
+	color: black;
+}
+
+#content main .head-title .left .breadcrumb li a {
+	color: grey;
+	pointer-events: none;
+}
+
+#content main .head-title .left .breadcrumb li a.active {
+	color: gray;
+	pointer-events: unset;
+}
+
+#content main .head-title .btn-download {
+	height: 36px;
+	padding: 0 16px;
+	border-radius: 36px;
+	background: #ff5821;
+	color: black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	grid-gap: 10px;
+	font-weight: 500;
+	box-shadow: 0px 4px 6px 0px black;
+}
+
+#content main .box-info {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+	grid-gap: 24px;
+	margin-top: 36px;
+}
+
+#content main .box-info li {
+	padding: 24px;
+	background: whitesmoke;
+	border-radius: 20px;
+	display: flex;
+	align-items: center;
+	grid-gap: 24px;
+	box-shadow: 0px 4px 6px 0px black;
+}
+
+#content main .box-info li .bx {
+	width: 80px;
+	height: 80px;
+	border-radius: 10px;
+	font-size: 36px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#content main .box-info li:nth-child(1) .bx {
+	background: #ff5821;
+	color: black;
+}
+
+#content main .box-info li:nth-child(2) .bx {
+	background: #ff5821;
+	color: black;
+}
+
+#content main .box-info li:nth-child(3) .bx {
+	background: #ff5821;
+	color: black;
+}
+
+#content main .box-info li:nth-child(4) .bx {
+	background: #ff5821;
+	color: black;
+}
+
+#content main .box-info li:nth-child(5) .bx {
+	background: #ff5821;
+	color: black;
+}
+
+#content main .box-info li:nth-child(6) .bx {
+	background: #ff5821;
+	color: black;
+}
+
+#content main .box-info li .text h3 {
+	font-size: 24px;
+	font-weight: 600;
+	color: #ff5821;
+}
+
+#content main .box-info li .text p {
+	color: black;	
+}
+
+#content main .table-data {
+	display: flex;
+	flex-wrap: wrap;
+	grid-gap: 24px;
+	margin-top: 24px;
+	width: 100%;
+	color: black;
+    min-width: 400px;
+}
+
+#content main .table-data > div {
+	border-radius: 20px;
+	background: whitesmoke;
+	padding: 24px;
+	overflow-x: auto;
+	box-shadow: 0px 4px 6px 0px black;
+}
+
+#content main .table-data .head {
+	display: flex;
+	align-items: center;
+	grid-gap: 16px;
+	margin-bottom: 24px;
+}
+
+#content main .table-data .head h3 {
+	margin-right: auto;
+	font-size: 24px;
+	font-weight: 600;
+}
+
+#content main .table-data .head .bx {
+	cursor: pointer;
+}
+
+#content main .table-data .order{
+    flex-grow: 1;
+    flex-basis: 500px;
+}
+
+#content main .table-data .order table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+#content main .table-data .order table th {
+	padding-bottom: 12px;
+	font-size: 13px;
+	text-align: left;
+	border-bottom: 1px solid grey;
+    font-weight: bold;
+    font-size: large;
+    background-color: coral;
+}
+
+#content main .table-data .order table td {
+	padding: 16px 0;
+}
+
+#content main .table-data .order table tr td:first-child {
+	display: flex;
+	align-items: center;
+	grid-gap: 12px;
+	padding-left: 6px;
+}
+
+#content main .table-data .order table tr td .status {
+	font-size: 10px;
+	padding: 6px 16px;
+	color: black;
+	border-radius: 20px;
+	font-weight: 700;
+}
+#content main .table-data .order table tr td .status.completed {
+	background: #ff5821;
+}
+
+#content main .table-data .order table tr td .status.unpaid {
+    background: #ff5821;
+}
+
+#content main .table-data .order table tr td .status.pending {
+    background: #ff5821;
+}
+
+#content main .table-data .order table tbody tr{
+    border-bottom: 1px solid grey;
+    border-right: 1px solid grey;
+    border-left: 1px solid grey;
+    border-top: 1px solid grey;
+}
+
+#content main .table-data .order table tbody tr:nth-last-of-type(even){
+    background-color: coral;
+}
+
+#content main .table-data .order table tbody tr:last-of-type{
+    border-bottom: 2px solid #ff5821;
+}
+
+#content main .table-container{
+	display: flex;
+}
