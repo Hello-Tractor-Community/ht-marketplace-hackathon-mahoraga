@@ -1,0 +1,218 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+Welcome {
+    font-weight: semi-bold;
+
+}
+
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    border: 1px solid grey;
+    color: black;
+   /* padding: 10px 10px;*/
+   padding-bottom: 30px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    bottom: 560px;
+    z-index: 1000;
+
+}
+
+.navbar-left h1 {
+    font-size: 24px;
+    font-weight: medium;
+    font-family: Arial, sans-serif;
+    margin-right: 400px;
+}
+
+.navbar-center {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}
+
+
+/* Main Content */
+.main-content {
+  flex: 1;
+  padding: 20px;
+}
+
+
+.add-product-btn {
+    display: inline-flex;
+    align-items: center;
+    background-color: #f2f2f2`;
+    color: black;
+    padding: 10px 10px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 16px;
+    margin-left: 1000px;
+}
+
+.add-product-btn:hover {
+    background-color: #ff5821;
+}
+
+.add-icon {
+    font-size: 20px;
+    margin-right: 8px;
+}
+
+/* Search Container */
+.search-container {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown: Initially Hidden */
+.search-dropdown {
+    display: none;  /* Hide by default */
+    position: absolute;
+    top: 40px;  /* Adjust as per your design */
+    left: 0;
+    background: #fff;
+    border: 1px solid #ddd;
+    list-style: none;
+    padding: 10px;
+    margin: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Dropdown Items */
+.search-dropdown li {
+    padding: 5px;
+}
+
+.search-dropdown li a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+}
+
+.search-dropdown li a:hover {
+    background: #f0f0f0;
+}
+
+/* Show Dropdown on Hover */
+.search-container:hover .search-dropdown {
+    display: block;  /* Show when hovering over the container */
+}
+
+form.dashboard-searchbar {
+    margin-left: 200px;
+    position: relative;
+    padding: 0px 2px;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+input.dash-search-input {
+    border: none;
+    height: 32px;
+    border-radius: 10px;
+    margin-right: 2px;
+    background-color: #f2f2f2;
+    width: 300px;
+    font-size: 13px;
+}
+
+button.dash-search-button {
+    border: none;
+    padding: 8px;
+    border-radius: 10px;
+    margin-right: 2px;
+    background-color: #ff5821;
+    cursor: pointer;
+}
+
+div.metrics-container {
+   display: flex;
+  justify-content: space-around;
+  margin-top: 30px;
+  padding-top: 55px;
+}
+
+div.metrics-container p {
+    font-size: 18px;
+    padding: 50px;
+
+    border-radius: 10px;
+    box-shadow: 10px 10px 5px 2px #f2f2f2;
+    font-weight: bold;
+    border: 2px solid #f2f2f2;
+}
+
+/charts/
+canvas {
+  max-width: 100%;
+  height: auto;
+}
+
+/Product Table/
+
+table.product-table {
+    width: 40%;
+    border-collapse: collapse;
+    margin-top: 30px;
+}
+
+table.product-table td a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+table.product-table td a:hover {
+  text-decoration: underline;
+}
+
+table.orders-table {
+     margin-top: 30px;
+     width: 100%;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    border-radius: 4px;
+}
+th {
+    background-color: #ff5821;
+    text-align: left;
+}
+
+/* Charts Section */
+.charts-section {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+/* Chart container styling */
+.chart-container {
+     width: 48%;
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 10px 10px 5px 2px #f2f2f2;
+}
+
+/* Responsive resizing of the chart */
+@media (max-width: 768px) {
+    .chart-container {
+        width: 90%;  /* On smaller screens, make the chart container occupy 90% of the width */
+    }
+}
+
+

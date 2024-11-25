@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Seller Registration</title>
+  {% load static %}
+  <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="registration-container">
+    <div class="registration-card">
+      <h1 class="title">Register as a Seller</h1>
+      <form method="POST" class="registration-form">
+        {% csrf_token %}
+        <div class="form-group">
+          {{ user_form.as_p }}
+        </div>
+        <div class="form-group">
+          {{ seller_form.as_p }}
+        </div>
+        <button type="submit" class="register-button">Register</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>

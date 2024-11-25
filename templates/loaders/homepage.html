@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Homepage</title>
+    {% load static %}
+     <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+
+</head>
+<body>
+<h1>Welcome to Tractor Junction</h1>
+    <p>
+        <a href="{% url 'register_seller' %}">Register as a Seller</a><br>
+        <a href="{% url 'seller_dashboard' %}">Seller Dashboard</a>
+    </p>
+</body>
+</html>
