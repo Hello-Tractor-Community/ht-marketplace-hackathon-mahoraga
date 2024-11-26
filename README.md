@@ -53,7 +53,9 @@ Please organize and complete the following deliverables within this repository:
   First,clone the app
   git clone https://github.com/Hello-Tractor-Community/ht-marketplace-hackathon-mahoraga-hello-tractor
   cd ht-marketplace-hackathon-mahoraga-hello-tractor
-Run bin/setup to install Javascript dependancies and setup your database.
+  pip install -r requirements.txt
+  python manage.py migrate
+  python manage.py runserver
 
 ### 5. **Project Report**
 Complete this section in a separate ReadMe file `report.md`:
