@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+        <title>Sign In Regiter form</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+        <link rel="stylesheet" href="style1.css">
+    </head>
+    <body>
+        <div class="container">
+        <div class="form-box">
+            <div class="button-box">
+                <div id="btn"></div>
+                <button type="button" class="toggle-btn" onclick="Sign In()">Sign in</button>
+                <button type="button" class="toggle-btn"onclick="Register()">Register</button>
+            </div>
+            <form id="Sign In" class="input-group">
+                <input type="text" class="input-field" placeholder="Username" required>
+                <input type="text" class="input-field" placeholder="Password" required>
+                <input type="checkbox" class="check-box"><span>Remember Password</span>
+                <button type="submit" class="submit-btn">Sign In</button>  
+            </form>
+            <form id="Register" class="input-group">
+                <input type="text" class="input-field" placeholder="Username" required>
+                <input type="email" class="input-field" placeholder="Email" required>
+                <input type="text" class="input-field" placeholder="Password" required>
+                <input type="checkbox" class="check-box"><span>I agree to the terms and conditions</span>
+                <button type="submit" class="submit-btn">Register</button>  
+            </form>
+        </div>
+        
+        </div>
+        <script>
+            var x = document.getElementById("Sign In");
+            var y = document.getElementById("Register");
+            var z = document.getElementById("btn");
+
+            function Register(){
+                x.style.left="-400px";
+                y.style.left="50px";
+                z.style.left="110px";
+            }
+        </script>
+    </body>
+</html>
