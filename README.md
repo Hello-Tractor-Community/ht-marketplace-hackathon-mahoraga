@@ -45,7 +45,13 @@ Please organize and complete the following deliverables within this repository:
 - Include setup instructions for running the project locally.
 - Provide any architecture diagrams or flowcharts explaining the design.
 - **Documentation**: Add details in a `docs/` folder or link to relevant markdown files.
-
+  ### **Requirements**
+  you will need the following installed to run the project successfully;
+  google-api-python-client
+  cloudinary
+  ### **Initial Setup**
+  First,clone the app
+  git clone https://github.com/Hello-Tractor-Community
 ### 5. **Project Report**
 Complete this section in a separate ReadMe file `report.md`:
 - **Project Name**: [Insert your project name]
