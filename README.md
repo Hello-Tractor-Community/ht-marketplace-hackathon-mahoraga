@@ -51,7 +51,10 @@ Please organize and complete the following deliverables within this repository:
   cloudinary
   ### **Initial Setup**
   First,clone the app
-  git clone https://github.com/Hello-Tractor-Community
+  git clone https://github.com/Hello-Tractor-Community/ht-marketplace-hackathon-mahoraga-hello-tractor
+  cd ht-marketplace-hackathon-mahoraga-hello-tractor
+Run bin/setup to install Javascript dependancies and setup your database.
+
 ### 5. **Project Report**
 Complete this section in a separate ReadMe file `report.md`:
 - **Project Name**: [Insert your project name]
