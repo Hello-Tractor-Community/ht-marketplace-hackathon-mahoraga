@@ -299,7 +299,6 @@ html{
 	border-bottom: 1px solid grey;
     font-weight: bold;
     font-size: large;
-    background-color: coral;
 }
 
 #content main .table-data .order table td {
@@ -340,7 +339,7 @@ html{
 }
 
 #content main .table-data .order table tbody tr:nth-last-of-type(even){
-    background-color: coral;
+    background-color: white;
 }
 
 #content main .table-data .order table tbody tr:last-of-type{
